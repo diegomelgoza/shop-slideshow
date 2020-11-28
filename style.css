@@ -34,32 +34,18 @@ body {
   line-height: 38px;
 }
 
-.navlist {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 75%;
-  margin: auto 100px auto 10px;
-}
-
-.navlist a {
+a {
   padding: 20px;
-}
-
-.navlist a:hover {
-  color: white;
-  background-color: white;
-}
-
-.navlist li a {
   color: rgb(55, 55, 182);
   font-size: 1.25rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: color 1s ease, border 1s ease;
   text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
 }
 
 .icon {
@@ -67,25 +53,25 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .navlist a:not(:first-child) {
+  a:not(:first-child) {
     display: none;
   }
-  .navlist a.icon {
+  a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .navlist.responsive {
+  .responsive {
     position: relative;
   }
-  .navlist.responsive .icon {
+  .responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .navlist.responsive a {
+  .responsive a {
     float: none;
     display: block;
     text-align: left;
